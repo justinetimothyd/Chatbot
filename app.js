@@ -48,10 +48,3 @@ function showSlider(type){
         nextDom.click();
     }, timeAutoNext);
 }
-
-prevDom.addEventListener('click', function () {
-    
-    carouselDom.classList.remove('next');  // Ensure 'next' class is removed
-    
-    resetCarousel();  // Optionally reset the auto transition timer
-});
