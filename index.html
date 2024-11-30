@@ -16,7 +16,7 @@
 <body>
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="/" id="navbar__logo"><i class="fa-solid fa-robot"></i>TECHMATES PH</a>
+            <a href="index.html" id="navbar__logo"><i class="fa-solid fa-robot"></i>TECHMATES PH</a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -29,9 +29,6 @@
                 <li class="navbar__item">
                     <a href="Information.html" class="navbar__links">Information</a>
                 </li>
-                <li class="navbar__btn">
-                    <a href="/" class="button">NIGGA</a>
-                </li>
             </ul>
         </div>
     </nav>
@@ -43,7 +40,7 @@
                 <h2>TECHNOLOGY</h2>
                 <p>See what makes us different.</p>
                 <button class="main__btn">
-                    <a href="">Get Started</a>
+                    <a href="" id="how-it-works">Get Started</a>
                 </button>
             </div>
             <div class="main__img--container">
@@ -54,17 +51,20 @@
 
 <!-- 2 -->
     <div class="services">
-        <h1>See what the hype is about</h1>
+        <h1>See what services we offer</h1>
         <div class="services__container">
             <div class="services__card">
-                <h2>Experience Bliss</h2>
-                <p>AI Powered Technology</p>
-                <button>Get Started</button>
+                <h2>AI Powered Technology</h2>
+                <p>Transform your PC Building experience with our AI-powered chatbot!
+                    Get personalized PC build suggestions based on your budget and needs,
+                    making the process simple and stress-free.
+                </p>
             </div>
             <div class="services__card">
-                <h2>Are you ready?</h2>
-                <p>Take the leap</p>
-                <button>Get Started</button>
+                <h2>PC Building Services</h2>
+                <p>Ready to build your dream PC? Our AI chatbot guides you through every step,
+                    helping you choose the best components that match your budget.
+                </p>
             </div>
         </div>
     </div>
@@ -72,11 +72,6 @@
      <div class="footer__container">
         <div class="footer__links">
             <div class="footer__link--wrapper">
-                <div class="footer__link--items">
-                    <h2>About Us</h2>
-                    <a href="/">How it works</a>
-                    <a href="/">Terms of service</a>
-                </div>
                 <div class="footer__link--items">
                     <h2>Contact Us</h2>
                     <a href="/">Instagram</a><a href="/">Facebook</a>
@@ -108,6 +103,18 @@
             </div>
         </div>
      </div>
+     <!-- popup -->
+     <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="close-popup" class="close-btn">&times;</span>
+            <h2>How It Works</h2>
+            <p>1. Our AI-powered chatbot is always ready to assist. Simply click the chat icon in the lower right corner, start chatting, and let it suggest the best components based on your budget.</p>       
+            <p>2. Want a custom PC build? Click on the chat icon at the bottom right of the screen, talk to our AI assistant, and it will suggest the ideal components for your budget preferences.</p>
+            <p>3. Just click the chat icon in the lower right corner to start a conversation with our AI chatbot. It will help you find the perfect PC components based on your budget.</p>
+            <p>4. The chat icon in the lower right corner is your gateway to hassle-free PC building. Click it, chat with our AI assistant, and get personalized recommendations for your ideal PC build.</p>
+            <p>5. With our AI chatbot, PC building is a breeze. Just click the chat icon on the lower right side of the page, answer a few questions, and get a tailored PC build suggestion in minutes!</p>
+        </div>
+    </div>
 <!-- Chatbase -->
 <script>
     window.embeddedChatbotConfig = {
@@ -122,6 +129,33 @@
     defer>
 </script>
 
+<script>
+    let popup = document.getElementById("popup");
+        let howItWorksLink = document.getElementById("how-it-works");
+        let closePopupBtn = document.getElementById("close-popup");
+
+        function openPopup() {
+            popup.classList.add("open-popup");
+        }
+
+        function closePopup() {
+            popup.classList.remove("open-popup");
+        }
+
+        howItWorksLink.addEventListener("click", function(event) {
+            event.preventDefault();
+            openPopup();
+        });
+
+        closePopupBtn.addEventListener("click", closePopup);
+
+        window.addEventListener("click", function(event) {
+            if (event.target == popup) {
+                closePopup();
+            }
+        });
+</script>
     <script src="app.js"></script>
+
 </body>
 </html>
