@@ -1,0 +1,630 @@
+{
+  "intents": [
+    {
+      "intent": "Bad_words",
+      "examples": [
+        {
+          "text": "bobo"
+        },
+        {
+          "text": "fuck you"
+        },
+        {
+          "text": "gago"
+        },
+        {
+          "text": "nigga"
+        },
+        {
+          "text": "putang ina mo"
+        },
+        {
+          "text": "putanginamo"
+        },
+        {
+          "text": "stupid"
+        },
+        {
+          "text": "tanga"
+        },
+        {
+          "text": "tang ina mo"
+        },
+        {
+          "text": "tanginamo"
+        }
+      ],
+      "description": "Collection of bad words"
+    },
+    {
+      "intent": "Budget",
+      "examples": [
+        {
+          "text": "Can you recommend a build under"
+        },
+        {
+          "text": "I can spend about"
+        },
+        {
+          "text": "My budget is $"
+        },
+        {
+          "text": "My budget is ₱"
+        },
+        {
+          "text": "My budget is ____ pesos"
+        },
+        {
+          "text": "What's the best PC I can get for"
+        }
+      ],
+      "description": "Collection of budget messages"
+    },
+    {
+      "intent": "clear",
+      "examples": [
+        {
+          "text": "system clear"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Contact",
+      "examples": [
+        {
+          "text": "Could you provide your contact details?"
+        },
+        {
+          "text": "How can I reach you?"
+        },
+        {
+          "text": "What is the best way to contact you?"
+        },
+        {
+          "text": "Where can I contact you?"
+        },
+        {
+          "text": "Where can I find your contact info?"
+        },
+        {
+          "text": "Where can I get in touch with you?"
+        },
+        {
+          "text": "Where can I send you a message?"
+        }
+      ],
+      "description": "Contact"
+    },
+    {
+      "intent": "Greeting",
+      "examples": [
+        {
+          "text": "Good afternoon"
+        },
+        {
+          "text": "Good Evening"
+        },
+        {
+          "text": "Good Morning"
+        },
+        {
+          "text": "hello"
+        },
+        {
+          "text": "hey"
+        },
+        {
+          "text": "hi"
+        }
+      ],
+      "description": "Collection of all greetings"
+    },
+    {
+      "intent": "Thank_you",
+      "examples": [
+        {
+          "text": "Appreciate it"
+        },
+        {
+          "text": "Cheers"
+        },
+        {
+          "text": "Thanks"
+        },
+        {
+          "text": "Thank you"
+        }
+      ],
+      "description": "Collection of thank you related words"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "Bad_words",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "tanginamo",
+          "synonyms": [
+            "bobo",
+            "faggot",
+            "fuck you",
+            "gago",
+            "nigga",
+            "putang ina mo",
+            "putanginamo",
+            "stupid",
+            "tanga",
+            "tang ina mo"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Budget",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "10000 pesos",
+          "synonyms": [
+            "10000",
+            "10000 peso"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "15000 pesos",
+          "synonyms": [
+            "15000",
+            "15000 peso",
+            "16000",
+            "16000 peso"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "20000 pesos",
+          "synonyms": [
+            "20000",
+            "20000 peso"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "25000 pesos",
+          "synonyms": [
+            "23000",
+            "24000",
+            "25000",
+            "25000 peso"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "30000 pesos",
+          "synonyms": [
+            "30000",
+            "30000 peso",
+            "31000",
+            "32000",
+            "33000",
+            "34000",
+            "35000"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "40000 pesos",
+          "synonyms": [
+            "39000",
+            "40000",
+            "40000 peso",
+            "41000"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "45000 pesos",
+          "synonyms": [
+            "45000 pesos",
+            "46000 pesos",
+            "47000 pesos",
+            "48000 pesos",
+            "49000 pesos",
+            "50000 pesos"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "9000 pesos",
+          "synonyms": [
+            "8000",
+            "8000 pesos",
+            "9000",
+            "9000 peso"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "clear",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "system clear",
+          "synonyms": [
+            "system clear"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Contact",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Where can I contact you?",
+          "synonyms": [
+            "Can I get your contact details, please?",
+            "Can you share your contact information?",
+            "Could you provide your contact details?",
+            "How can I get in touch with you for further questions?",
+            "How can I reach out to you?",
+            "How can I reach you?",
+            "How do I contact you?",
+            "How do I contact you for support?",
+            "What is the best way to contact you?",
+            "What’s the best way to contact you?",
+            "What’s your contact number or email?",
+            "Where can I find your contact details?",
+            "Where can I get in touch with you?",
+            "Where can I send you a message?"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_1_1733754013644",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Greeting",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello! How can I assist you?"
+              },
+              {
+                "text": "Hope you are doing well. How can I assist you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Greeting",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1733754013644",
+      "previous_sibling": "node_8_1733754012741"
+    },
+    {
+      "type": "standard",
+      "title": "Prices",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Budget",
+      "dialog_node": "node_2_1733754647658",
+      "previous_sibling": "node_4_1733758804691"
+    },
+    {
+      "type": "standard",
+      "title": "Bad Words",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please refrain from using offensive language. How can I assist you further?"
+              },
+              {
+                "text": "Let's keep the conversation respectful. How can I help you today?"
+              },
+              {
+                "text": "I understand you're frustrated, but let's keep things respectful. What can I assist you with?"
+              },
+              {
+                "text": "I’m here to help, but please keep the conversation polite. How can I assist you?"
+              },
+              {
+                "text": "Whoa, let’s save the swear words for another time! What can I do for you today?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "@Bad_words:tanginamo",
+      "dialog_node": "node_4_1733758804691",
+      "previous_sibling": "node_9_1733762753903"
+    },
+    {
+      "type": "standard",
+      "title": "Contact",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Of course! You can contact us"
+              },
+              {
+                "text": "Feel free to email us at [techmatesph@gmail.com]"
+              },
+              {
+                "text": "You can contact us through email at [techmatesph@gmail.com]. Let us know how we can assist you!"
+              },
+              {
+                "text": "You can contact us anytime by emailing [techmatesph@gmail.com]"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#Contact || @Contact",
+      "dialog_node": "node_7_1733761191890",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Thanks",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You're welcome! How can I assist you further?"
+              },
+              {
+                "text": "Thank you for your feedback! What else can I help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Thank_you",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_8_1733754012741",
+      "previous_sibling": "node_2_1733754647658"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Resetting the conversation."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@clear:(system clear)",
+      "dialog_node": "node_9_1733762753903",
+      "previous_sibling": "node_7_1733761191890"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here is a PC build based on your preferred budget:\n\nCPU: AMD Ryzen 5 5600G (Integrated Vega Graphics) – ₱7,350​\nMOBO: MSI B450M Mortar Max – ₱4,750\nRAM: Corsair Vengeance LPX 16GB (2x8GB) DDR4 3200MHz – ₱3,200​\nSTORAGE: Kingston NV2 1TB NVMe SSD – ₱3,100​\nPSU: Thermaltake Litepower RGB 550W 80+ – ₱1,995​\nCASE: Antec NX292 Tempered Glass Mid-Tower – ₱2,550\n\nTotal: ₱22,945"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1733754647658",
+      "conditions": "@Budget:(25000 pesos)",
+      "dialog_node": "response_2_1733757569906",
+      "previous_sibling": "response_9_1733757494076"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here is a PC build based on your preferred budget:\n\nProcessor: AMD Ryzen 5 5600X – ₱8,750\nMotherboard: MSI B450M PRO-VDH MAX – ₱4,800\nRAM: Kingston FURY Beast 16GB (2x8GB) DDR4 3200MHz – ₱3,200\nStorage: Kingston NV2 1TB NVMe M.2 SSD – ₱3,100​\nGPU: ASUS TUF Gaming GeForce GTX 1660 Super 6GB – ₱12,000\nCase: Tecware Nexus M2 Tempered Glass ATX Case – ₱1,950\nPSU: Corsair CV650 80+ Bronze – ₱3,200\nADDITIONAL COOLING: Cooler Master Hyper 212 – ₱2,000.\n\nTOTAL: 39,000"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1733754647658",
+      "conditions": "@Budget:(40000 pesos)",
+      "dialog_node": "response_2_1733757703440",
+      "previous_sibling": "response_9_1733757583815"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here is a PC build based on your preferred budget:\n\nCPU: Ryzen 5 4600G - 3,175 \nMOBO: MSI A520M A Pro - 2,108 \nRAM: Colorful Battle AX 16GB DDR4 (8x2) - 1,342 \nSTORAGE: Colorful CN600Pro NVME PCIE3 - 1,429 \nPSU: Keytech Thunderbolt 800w - 212 \nFANS: Keytech Tornado Gstorm 80mm -  400 \nCase: Inplay Wind 01 - 294 \n\nTOTAL : 8,912"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1733754647658",
+      "conditions": "@Budget:(10000 pesos)",
+      "dialog_node": "response_6_1733754666669"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here is a PC build based on your preferred budget:\n\nCPU: AMD Athlon 3000G -  2,776\nMOBO: ASUS Prime A320M-K - 2,750\nRAM: Kingston HyperX Fury 8GB 2666Mhz -  1,900\nSTORAGE: Kingston A400 240GB M.2 SSD -  2,150\nCase with Generic PSU -     900\n\nTOTAL:  10,476"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1733754647658",
+      "conditions": "@Budget:(15000 pesos)",
+      "dialog_node": "response_6_1733757472819",
+      "previous_sibling": "response_6_1733754666669"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here is a PC build based on your preferred budget:\n\nCPU: AMD Ryzen 5 5600X - ₱10,500\nMotherboard: GIGABYTE B450M DS3H V2 - ₱4,250 \nGPU: MSI GeForce RTX™ 4060 VENTUS 2X OC 8GB GDDR6 128-bit Graphics Card - 19,900\nRAM: Corsair Vengeance LPX 16GB (2x8GB) DDR4 3200MHz - ₱4,000\nSSD: Kingston NV2 500GB NVMe SSD - ₱2,500\nCPU Cooler: Cooler Master Hyper 212 - ₱2,200\nPC Case: ANTEC AX20 Elite Black RGB Mid-Tower - ₱1,995\nPSU: Corsair CV650 80+ Bronze - ₱3,000\n\nTOTAL: 48,145"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1733754647658",
+      "conditions": "@Budget:(45000 pesos)",
+      "dialog_node": "response_8_1733757841040",
+      "previous_sibling": "response_2_1733757703440"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here is a PC build based on your preferred budget:\n\nProcessor: AMD Ryzen 5 4500 - 5,250\nMotherboard: ASUS PRIME A320M-K - 3,050 \nRAM: TEAM T-FORCE DELTA RGB 16GB (2x8GB) DDR4 3200MHz - 3,050 \nStorage: Kingston NV1 500GB NVMe SSD - 1,950 \nGraphics Card: Integrated (AMD Ryzen 5 4500 has Radeon Vega Graphics)\nPower Supply: Aerocool VX Plus 500W - 1,450\nCase: Tecware Nexus M2 - 1,150 \n\nTOTAL: 15,900"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1733754647658",
+      "conditions": "@Budget:(20000 pesos)",
+      "dialog_node": "response_9_1733757494076",
+      "previous_sibling": "response_6_1733757472819"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here is a PC build based on your preferred budget:\n\nProcessor: AMD Ryzen 5 5600G - ₱8,750\nMotherboard: MSI B450M PRO-VDH MAX - ₱4,800\nGraphics Card: ASUS Phoenix GeForce GTX 1650 4GB - ₱9,990\nMemory: Kingston FURY Beast 16GB (2x8GB) DDR4 3200MHz - ₱3,200\nStorage: Kingston NV2 500GB NVMe SSD - ₱2,250\nPower Supply: Corsair CV450 450W 80+ Bronze - ₱2,900\nCase: Antec AX20 Elite Mid-Tower Case - ₱1,995\n\nTotal: ₱33,885"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1733754647658",
+      "conditions": "@Budget:(30000 pesos)",
+      "dialog_node": "response_9_1733757583815",
+      "previous_sibling": "response_2_1733757569906"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "learning_opt_out": false,
+  "language": "en",
+  "description": "created for assistant 474efd8a-96f5-439c-b7bb-e84aef595cf0",
+  "name": "Computer Building Service Chatbot-dialog"
+}

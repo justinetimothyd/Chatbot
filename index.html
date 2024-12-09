@@ -116,19 +116,23 @@
             <p>5. With our AI chatbot, PC building is a breeze. Just click the chat icon on the lower right side of the page, answer a few questions, and get a tailored PC build suggestion in minutes!</p>
         </div>
     </div>
-<!-- Chatbase -->
+<!-- Chatbot-->
 <script>
-    window.embeddedChatbotConfig = {
-        chatbotId: "fZK3us_xKOIp4Y5-fHIlK",
-        domain: "www.chatbase.co"
+    window.watsonAssistantChatOptions = {
+      integrationID: "f8dc1016-4d33-4228-b387-ed36f0c42d4d", // The ID of this integration.
+      region: "au-syd", // The region your integration is hosted in.
+      serviceInstanceID: "dbb422bb-cb9e-4b7f-9b36-1337dda5b481", // The ID of your service instance.
+      onLoad: async (instance) => { await instance.render(); 
+        await instance.resetSession();
+      console.log("Conversation reset on page reload.");
+      }
     };
-</script>
-<script 
-    src="https://www.chatbase.co/embed.min.js" 
-    chatbotId="fZK3us_xKOIp4Y5-fHIlK" 
-    domain="www.chatbase.co" 
-    defer>
-</script>
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
 
 <script>
     let popup = document.getElementById("popup");

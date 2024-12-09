@@ -658,6 +658,7 @@
 }
 .carousel .list .item .content .title{
     font-weight: bold;
+    color: #a537ff;
     font-size: 5em;
     line-height: 1.3em;
     
@@ -707,6 +708,11 @@
 }
 
 .thumbnail .item .content .title{
+    font-weight: bold;
+}
+
+.thumbnail .item .content .des{
+    color: #5a0ceb;
     font-weight: bold;
 }
 
