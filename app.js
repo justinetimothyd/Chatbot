@@ -30,12 +30,13 @@ function showSlider(type){
         listItemDom.appendChild(itemSlider[0]);
         thumbnailDom.appendChild(itemThumbnail[0]);
         carouselDom.classList.add('next');
-    } else{
-        let positionLastItem = itemSlider.length - 1;
-        listItemDom.prepend(itemSlider[positionLastItem]);
-        thumbnailDom.prepend(itemThumbnail[positionLastItem]);
-        carouselDom.classList.add('prev');
     }
+    // } else{
+    //     let positionLastItem = itemSlider.length - 1;
+    //     listItemDom.prepend(itemSlider[positionLastItem]);
+    //     thumbnailDom.prepend(itemThumbnail[positionLastItem]);
+    //     carouselDom.classList.add('prev');
+    // }
     
     clearTimeout(runTimeOut);
     runTimeOut = setTimeout(() =>{

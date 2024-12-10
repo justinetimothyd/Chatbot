@@ -1,0 +1,34 @@
+version: "3.0"
+nlu:
+- intent: Greeting
+  examples: |
+    - hello
+    - hi
+    - hey
+    - Good Morning
+    - Good Evening
+
+- intent: Thank_you
+  examples: |
+    - Thanks
+    - Thank you
+    - Cheers
+    - Appreciate it
+
+- intent: Bad_words
+  examples: |
+    - fuck you
+    - bobo
+    - tangina
+    - gago
+    - stupid
+
+- intent: Contact
+  examples: |
+    - How can I contact you?
+    - Where can I reach you?
+
+- intent: Budget
+  examples: |
+    - My budget is ₱30000
+    - What's the best PC build for 45000 pesos?

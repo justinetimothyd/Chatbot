@@ -1,0 +1,28 @@
+version: "3.0"
+stories:
+- story: greet and respond
+  steps:
+    - intent: Greeting
+    - action: utter_greet
+
+- story: thank you
+  steps:
+    - intent: Thank_you
+    - action: utter_thank_you
+
+- story: handle offensive language
+  steps:
+    - intent: Bad_words
+    - action: utter_bad_words
+
+- story: contact info
+  steps:
+    - intent: Contact
+    - action: utter_contact
+
+- story: budget inquiry
+  steps:
+    - intent: Budget
+      entities:
+        - Budget: 30000
+    - action: action_recommend_build

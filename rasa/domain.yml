@@ -1,0 +1,35 @@
+intents:
+  - Bad_words
+  - Budget
+  - clear
+  - Contact
+  - Greeting
+  - Thank_you
+
+entities:
+  - Budget
+  - Contact
+  - clear
+  - Bad_words
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you?"
+    - text: "Hope you are doing well. How can I assist you?"
+
+  utter_thank_you:
+    - text: "You're welcome! How can I assist you further?"
+    - text: "Thank you for your feedback! What else can I help you with?"
+
+  utter_bad_words:
+    - text: "Please refrain from using offensive language. How can I assist you further?"
+    - text: "Let's keep the conversation respectful. How can I help you today?"
+
+  utter_contact:
+    - text: "You can contact us through email at techmatesph@gmail.com."
+
+  utter_budget_response:
+    - text: "Here is a PC build based on your preferred budget: {build_details}"
+
+actions:
+  - action_recommend_build
