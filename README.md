@@ -1,1 +1,1 @@
-This repository includes the files for an AI chatbot using RASA.
+This project is a website for an AI support chatbot.
